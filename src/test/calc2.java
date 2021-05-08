@@ -30,6 +30,10 @@ public class calc2 {
         str = vvod.nextLine();
         vvod.close();
         
+        String[] words = str.split("\\+|\\-|\\*|\\/");
+        for(String word : words){
+        System.out.println(word);
+        }
         
         int indsum = str.indexOf('+');
         int inddiv = str.indexOf('/');
@@ -39,7 +43,6 @@ public class calc2 {
         if (indsum<0 && inddiv<0 && indsub<0 && indmult<0){
             System.err.println("Ошибка");
 //                           throw new Exception("ошибка");
-
         }
         
         if (indsum > 0){
@@ -159,8 +162,6 @@ public class calc2 {
                     System.out.println(rezstr = inttov(rez));
                 }               
                 break;    
-        }
-                
+        }    
     }
-      
 }

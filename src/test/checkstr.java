@@ -46,8 +46,7 @@ public class checkstr {
                     throw new Exception("Одно из чисел не удовлетворяет условиям");
                 }
 
-                    break;
-                
+                    break;  
             }
             return x;
         }
@@ -62,7 +61,6 @@ public class checkstr {
         catch (NumberFormatException e) {  
                     check1 = 2;
                 }
-        
         return check1;
     }
 }
