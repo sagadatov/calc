@@ -2,7 +2,7 @@ package test;
 
 public class Strtoint {
     
-    public static String inttov(int a){
+    public static String inttov(int a) throws Exception{
         String V = "";
         switch(a){
             case 1:
@@ -305,7 +305,10 @@ public class Strtoint {
             case 100:
                 V = "C";
                 break; 
-                
+            
+            default:
+                System.err.println("Ошибка");
+                throw new Exception("Ошибка");
         }
         return V;
     }

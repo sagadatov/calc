@@ -37,7 +37,7 @@ public class calc2 {
         int indmult = str.indexOf('*');
         
         if (indsum<0 && inddiv<0 && indsub<0 && indmult<0){
-            System.out.println("Ошибка");
+            System.err.println("Ошибка");
 //                           throw new Exception("ошибка");
 
         }
